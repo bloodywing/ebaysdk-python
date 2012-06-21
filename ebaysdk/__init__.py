@@ -31,8 +31,11 @@ def nodeText(node):
         
     return ''.join(rc)
 
-def tag(name, value):
-    return "<%s>%s</%s>" % ( name, value, name )
+def tag(name, value, **attributes):
+    return "<%s%s>%s</%s>" % (name,
+                              str().join(' %s="%s"' % (key, value) for (key, value) in attributes.items()),
+                              value,
+                              name)
 
 class ebaybase(object):
     
@@ -284,6 +287,10 @@ class shopping(ebaybase):
         uri='/shopping',
         https=False,
         siteid=0,
+        appid=None,
+        certid=None,
+        devid=None,
+        version=None,
         response_encoding='XML',
         request_encoding='XML',
         config_file='ebay.yaml',
@@ -298,15 +305,27 @@ class shopping(ebaybase):
             'siteid' : siteid,
             'response_encoding' : response_encoding,
             'request_encoding' : request_encoding,
+            'version': 777
         }    
 
         self.load_yaml(config_file)
+
+        self.api_config['domain']=domain or self.api_config.get('domain')
+        self.api_config['uri']=uri or self.api_config.get('uri')
+        self.api_config['https']=https or self.api_config.get('https')
+        self.api_config['siteid']=siteid or self.api_config.get('siteid')
+        self.api_config['response_encoding']=response_encoding or self.api_config.get('response_encoding')
+        self.api_config['request_encoding']=request_encoding or self.api_config.get('request_encoding')
+        self.api_config['appid']=appid or self.api_config.get('appid')
+        self.api_config['certid']=certid or self.api_config.get('certid')
+        self.api_config['devid']=devid or self.api_config.get('devid')
+        self.api_config['version']=version or self.api_config.get('compatability') or self.api_config.get('version')
 
     def _build_request_headers(self):
         return {
             "X-EBAY-API-VERSION": self.api_config.get('version', ''),
             "X-EBAY-API-APP-ID": self.api_config.get('appid', ''),
-            "X-EBAY-API-SITEID": self.api_config.get('siteid', ''),
+            "X-EBAY-API-SITE-ID": self.api_config.get('siteid', ''),
             "X-EBAY-API-CALL-NAME": self.verb,
             "X-EBAY-API-REQUEST-ENCODING": "XML",
             "Content-Type": "text/xml"
