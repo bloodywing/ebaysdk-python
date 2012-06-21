@@ -125,13 +125,13 @@ class ebaybase(object):
     def do(self, verb, call_data=dict()):
         return self.execute(verb, call_data)
                     
-    def execute(self, verb, data):
+    def execute(self, verb, data, _listnames=None):
         self.verb = verb
 
         if type(data) == DictType:
-            self.call_xml = dict2xml(data, roottag=None)
+            self.call_xml = dict2xml(data, roottag=None, listnames=_listnames)
         elif type(data) == ListType:
-            self.call_xml = list2xml(data, roottag=None)
+            self.call_xml = list2xml(data, roottag=None, listnames=_listnames)
         else:    
             self.call_xml = data
 
