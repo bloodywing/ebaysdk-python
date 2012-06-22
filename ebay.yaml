@@ -10,7 +10,7 @@ api.ebay.com:
     certid: _certid_
     devid: _devid_
     token:
-    version: 671
+    version: 777
     https: 1
 
 # Shopping
@@ -18,9 +18,34 @@ open.api.ebay.com:
     appid: _appid_
     certid: _certid_
     devid: _devid_
-    version: 671
+    version: 777
 
 # Finding/Merchandising
 svcs.ebay.com:
     appid: _appid_
-    version: 1.0.0
+    version: 1.11.0
+
+# Sandbox Domains
+# Ebay Website: sandbox.ebay.com
+# Trading - External
+api.sandbox.ebay.com:
+    password: _password_
+    username: _username_
+    appid: _appid_
+    certid: _certid_
+    devid: _devid_
+    token:
+    version: 777
+    https: 1
+
+# Shopping
+open.api.sandbox.ebay.com:
+    appid: _appid_
+    certid: _certid_
+    devid: _devid_
+    version: 777
+
+# Finding/Merchandising
+svcs.sandbox.ebay.com:
+    appid: _appid_
+    version: 1.11.0
