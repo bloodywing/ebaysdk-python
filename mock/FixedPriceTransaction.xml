@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsd="http://
+www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"> 
+  <soapenv:Header> 
+    <ebl:RequesterCredentials soapenv:mustUnderstand="0" xmlns:ns="urn:ebay:apis:eBLBaseComponents" 
+xmlns:ebl="urn:ebay:apis:eBLBaseComponents"> 
+      <ebl:NotificationSignature xmlns:ebl="urn:ebay:apis:eBLBaseComponents">Z2yhKdKmS0Ga5VPmLDOAlg==</ebl:NotificationSignature> 
+    </ebl:RequesterCredentials> 
+  </soapenv:Header>
+ <soapenv:Body> 
+    <GetItemTransactionsResponse xmlns="urn:ebay:apis:eBLBaseComponents">
+  <Timestamp>2012-05-30T07:00:31.790Z</Timestamp>
+  <Ack>Success</Ack>
+  <Version>773</Version>
+  <Build>E773_CORE_BUNDLED_14855335_R1</Build>
+  <PaginationResult>
+    <TotalNumberOfPages>1</TotalNumberOfPages>
+    <TotalNumberOfEntries>1</TotalNumberOfEntries>
+  </PaginationResult>
+  <HasMoreTransactions>false</HasMoreTransactions>
+  <TransactionsPerPage>100</TransactionsPerPage>
+  <PageNumber>1</PageNumber>
+  <ReturnedTransactionCountActual>1</ReturnedTransactionCountActual>
+  <Item>
+    <AutoPay>false</AutoPay>
+    <Currency>USD</Currency>
+    <ItemID>110099332117</ItemID>
+    <ListingDetails>
+      <ViewItemURL>http://cgi.sandbox.ebay.com/ws/eBayISAPI.dll?ViewItem&amp;Item=110099332117</ViewItemURL>
+      <ViewItemURLForNaturalSearch>http://cgi.sandbox.ebay.com/ws/eBayISAPI.dll?ViewItem&amp;item=110099332117&amp;category=0</ViewItemURLForNaturalSearch>
+    </ListingDetails>
+    <ListingType>Chinese</ListingType>
+    <PaymentMethods>PayPal</PaymentMethods>
+    <PrivateListing>false</PrivateListing>
+    <Quantity>1</Quantity>
+    <Seller>
+      <AboutMePage>false</AboutMePage>
+      <EIASToken>nY+sHZ2PrBmdj6wVnY+sEZ2PrA2dj6wFk4CpDZSLpwqdj6x9nY+seQ==</EIASToken>
+      <Email>testuser_magicalbookseller@yahoo.com</Email>
+      <FeedbackScore>95</FeedbackScore>
+      <PositiveFeedbackPercent>100.0</PositiveFeedbackPercent>
+      <FeedbackPrivate>false</FeedbackPrivate>
+      <FeedbackRatingStar>Blue</FeedbackRatingStar>
+      <IDVerified>true</IDVerified>
+      <eBayGoodStanding>true</eBayGoodStanding>
+      <NewUser>false</NewUser>
+      <RegistrationDate>2010-01-01T00:00:00.000Z</RegistrationDate>
+      <Site>US</Site>
+      <Status>Confirmed</Status>
+      <UserID>testuser_magicalbookseller</UserID>
+      <UserIDChanged>false</UserIDChanged>
+      <UserIDLastChanged>2007-11-29T18:43:54.000Z</UserIDLastChanged>
+      <VATStatus>NoVATTax</VATStatus>
+      <SellerInfo>
+        <AllowPaymentEdit>true</AllowPaymentEdit>
+        <CheckoutEnabled>true</CheckoutEnabled>
+        <CIPBankAccountStored>false</CIPBankAccountStored>
+        <GoodStanding>true</GoodStanding>
+        <LiveAuctionAuthorized>false</LiveAuctionAuthorized>
+        <MerchandizingPref>OptIn</MerchandizingPref>
+        <QualifiesForB2BVAT>false</QualifiesForB2BVAT>
+        <StoreOwner>true</StoreOwner>
+        <StoreURL>http://www.stores.sandbox.ebay.com/id=132854966</StoreURL>
+        <ExpressEligible>false</ExpressEligible>
+        <ExpressWallet>false</ExpressWallet>
+        <SafePaymentExempt>false</SafePaymentExempt>
+      </SellerInfo>
+    </Seller>
+    <SellingStatus>
+      <BidCount>1</BidCount>
+      <ConvertedCurrentPrice currencyID="USD">1.0</ConvertedCurrentPrice>
+      <CurrentPrice currencyID="USD">1.0</CurrentPrice>
+      <QuantitySold>1</QuantitySold>
+      <ListingStatus>Ended</ListingStatus>
+    </SellingStatus>
+    <Site>US</Site>
+    <Title>Harry Potter and the Philosopher's Stone</Title>
+    <GetItFast>false</GetItFast>
+    <IntegratedMerchantCreditCardEnabled>false</IntegratedMerchantCreditCardEnabled>
+    <ConditionID>2750</ConditionID>
+    <ConditionDisplayName>Like New</ConditionDisplayName>
+  </Item>
+  <TransactionArray>
+    <Transaction>
+      <AmountPaid currencyID="USD">0.0</AmountPaid>
+      <AdjustmentAmount currencyID="USD">0.0</AdjustmentAmount>
+      <ConvertedAdjustmentAmount currencyID="USD">0.0</ConvertedAdjustmentAmount>
+      <Buyer>
+        <AboutMePage>false</AboutMePage>
+        <EIASToken>nY+sHZ2PrBmdj6wVnY+sEZ2PrA2dj6wFk4CoDZKDpQqdj6x9nY+seQ==</EIASToken>
+        <Email>bountifulbuyer@gmail.com</Email>
+        <FeedbackScore>95</FeedbackScore>
+        <PositiveFeedbackPercent>100.0</PositiveFeedbackPercent>
+        <FeedbackPrivate>false</FeedbackPrivate>
+        <FeedbackRatingStar>Blue</FeedbackRatingStar>
+        <IDVerified>false</IDVerified>
+        <eBayGoodStanding>true</eBayGoodStanding>
+        <NewUser>false</NewUser>
+        <RegistrationDate>1995-01-01T00:00:00.000Z</RegistrationDate>
+        <Site>US</Site>
+        <Status>Confirmed</Status>
+        <UserID>testuser_bountifulbuyer</UserID>
+        <UserIDChanged>false</UserIDChanged>
+        <UserIDLastChanged>2009-02-12T05:01:49.000Z</UserIDLastChanged>
+        <VATStatus>NoVATTax</VATStatus>
+        <BuyerInfo>
+          <ShippingAddress>
+            <Name>Bountiful Buyer</Name>
+            <Street1>777 Klamath Drive</Street1>
+            <CityName>Sacramento</CityName>
+            <StateOrProvince>CA</StateOrProvince>
+            <Country>US</Country>
+            <CountryName>United States</CountryName>
+            <PostalCode>95842</PostalCode>
+            <AddressID>5383702</AddressID>
+            <AddressOwner>eBay</AddressOwner>
+            <AddressUsage>DefaultShipping</AddressUsage>
+          </ShippingAddress>
+        </BuyerInfo>
+        <UserAnonymized>false</UserAnonymized>
+      </Buyer>
+      <ShippingDetails>
+        <ChangePaymentInstructions>true</ChangePaymentInstructions>
+        <PaymentEdited>false</PaymentEdited>
+        <SalesTax>
+          <SalesTaxPercent>8.25</SalesTaxPercent>
+          <SalesTaxState>CA</SalesTaxState>
+          <ShippingIncludedInTax>true</ShippingIncludedInTax>
+          <SalesTaxAmount currencyID="USD">0.29</SalesTaxAmount>
+        </SalesTax>
+        <ShippingServiceOptions>
+          <ShippingService>USPSMedia</ShippingService>
+          <ShippingServiceCost currencyID="USD">2.5</ShippingServiceCost>
+          <ShippingServicePriority>1</ShippingServicePriority>
+          <ExpeditedService>false</ExpeditedService>
+          <ShippingTimeMin>2</ShippingTimeMin>
+          <ShippingTimeMax>8</ShippingTimeMax>
+        </ShippingServiceOptions>
+        <ShippingType>Flat</ShippingType>
+        <SellingManagerSalesRecordNumber>2450</SellingManagerSalesRecordNumber>
+        <ThirdPartyCheckout>false</ThirdPartyCheckout>
+        <TaxTable>
+          <TaxJurisdiction>
+            <JurisdictionID>CA</JurisdictionID>
+            <SalesTaxPercent>8.25</SalesTaxPercent>
+            <ShippingIncludedInTax>true</ShippingIncludedInTax>
+          </TaxJurisdiction>
+          <TaxJurisdiction>
+            <JurisdictionID>MI</JurisdictionID>
+            <SalesTaxPercent>6.0</SalesTaxPercent>
+            <ShippingIncludedInTax>false</ShippingIncludedInTax>
+          </TaxJurisdiction>
+        </TaxTable>
+        <GetItFast>false</GetItFast>
+      </ShippingDetails>
+      <ConvertedAmountPaid currencyID="USD">3.79</ConvertedAmountPaid>
+      <ConvertedTransactionPrice currencyID="USD">1.0</ConvertedTransactionPrice>
+      <CreatedDate>2012-05-30T07:00:26.000Z</CreatedDate>
+      <DepositType>None</DepositType>
+      <QuantityPurchased>1</QuantityPurchased>
+      <Status>
+        <eBayPaymentStatus>NoPaymentFailure</eBayPaymentStatus>
+        <CheckoutStatus>CheckoutIncomplete</CheckoutStatus>
+        <LastTimeModified>2012-05-30T07:00:26.000Z</LastTimeModified>
+        <PaymentMethodUsed>None</PaymentMethodUsed>
+        <CompleteStatus>Incomplete</CompleteStatus>
+        <BuyerSelectedShipping>false</BuyerSelectedShipping>
+        <PaymentHoldStatus>None</PaymentHoldStatus>
+        <IntegratedMerchantCreditCardEnabled>false</IntegratedMerchantCreditCardEnabled>
+      </Status>
+      <TransactionID>0</TransactionID>
+      <TransactionPrice currencyID="USD">1.0</TransactionPrice>
+      <BestOfferSale>false</BestOfferSale>
+      <ShippingServiceSelected>
+        <ShippingService>USPSMedia</ShippingService>
+        <ShippingServiceCost currencyID="USD">2.5</ShippingServiceCost>
+      </ShippingServiceSelected>
+      <TransactionSiteID>US</TransactionSiteID>
+      <Platform>eBay</Platform>
+      <PayPalEmailAddress>magicalbookseller@yahoo.com</PayPalEmailAddress>
+      <BuyerGuaranteePrice currencyID="USD">20000.0</BuyerGuaranteePrice>
+      <IntangibleItem>false</IntangibleItem>
+      <OrderLineItemID>110099332117-0</OrderLineItemID>
+    </Transaction>
+  </TransactionArray>
+  <PayPalPreferred>true</PayPalPreferred>
+</GetItemTransactionsResponse> 
+  </soapenv:Body> 
+</soapenv:Envelope> 

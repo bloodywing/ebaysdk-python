@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsd="http://
+www.w3.org/2001/XMLSchema" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"> 
+ <soapenv:Header> 
+  <ebl:RequesterCredentials xmlns:ns="urn:ebay:apis:eBLBaseComponents"
+        xmlns:ebl="urn:ebay:apis:eBLBaseComponents" soapenv:mustUnderstand="0">
+   <ebl:NotificationSignature xmlns:ebl="urn:ebay:apis:eBLBaseComponents">ABC123==
+ </ebl:NotificationSignature> 
+  </ebl:RequesterCredentials> 
+ </soapenv:Header> 
+ <soapenv:Body> 
+ <GetMyMessagesResponse xmlns="urn:ebay:apis:eBLBaseComponents">
+  <Timestamp>2012-06-22T08:33:40.075Z</Timestamp>
+  <Ack>Success</Ack>
+  <Version>777</Version>
+  <Build>E777_CORE_BUNDLED_14948543_R1</Build>
+  <Messages>
+    <Message>
+      <Sender>testuser_blidad</Sender>
+      <SendingUserID>133010053</SendingUserID>
+      <RecipientUserID>testuser_epicmuffin</RecipientUserID>
+      <SendToName>testuser_epicmuffin</SendToName>
+      <Subject>Sonstige: testuser_blidad hat eine Nachricht zu Ich und die anderen von Matt Ruff (2004)Artikelnummer 110100177208 gesendet.</Subject>
+      <MessageID>3214240</MessageID>
+      <ExternalMessageID>1081432010</ExternalMessageID>
+      <Flagged>false</Flagged>
+      <Read>false</Read>
+      <ReceiveDate>2012-06-22T08:26:41.000Z</ReceiveDate>
+      <ExpirationDate>2013-06-22T08:26:41.000Z</ExpirationDate>
+      <ItemID>110100177208</ItemID>
+      <ResponseDetails>
+        <ResponseEnabled>true</ResponseEnabled>
+        <ResponseURL>http://contact.sandbox.ebay.de/ws/eBayISAPI.dll?M2MContact&amp;item=110100177208&amp;requested=testuser_blidad&amp;qid=1081432010&amp;redirect=0&amp;messageid=m3214240</ResponseURL>
+      </ResponseDetails>
+      <Folder>
+        <FolderID>0</FolderID>
+      </Folder>
+      <Replied>false</Replied>
+      <ItemEndTime>2012-06-22T08:13:33.000Z</ItemEndTime>
+      <ItemTitle>Ich und die anderen von Matt Ruff (2004)</ItemTitle>
+    </Message>
+    <Message>
+      <Sender>testuser_blidad</Sender>
+      <SendingUserID>133010053</SendingUserID>
+      <RecipientUserID>testuser_epicmuffin</RecipientUserID>
+      <SendToName>testuser_epicmuffin</SendToName>
+      <Subject>Sonstige: testuser_blidad hat eine Nachricht zu Reise ins Licht von Reinhard Fischer (2000)Artikelnummer 110100177168 gesendet.</Subject>
+      <MessageID>3214230</MessageID>
+      <ExternalMessageID>1081430010</ExternalMessageID>
+      <Flagged>false</Flagged>
+      <Read>false</Read>
+      <ReceiveDate>2012-06-22T08:11:21.000Z</ReceiveDate>
+      <ExpirationDate>2013-06-22T08:11:20.000Z</ExpirationDate>
+      <ItemID>110100177168</ItemID>
+      <ResponseDetails>
+        <ResponseEnabled>true</ResponseEnabled>
+        <ResponseURL>http://contact.sandbox.ebay.de/ws/eBayISAPI.dll?M2MContact&amp;item=110100177168&amp;requested=testuser_blidad&amp;qid=1081430010&amp;redirect=0&amp;messageid=m3214230</ResponseURL>
+      </ResponseDetails>
+      <Folder>
+        <FolderID>0</FolderID>
+      </Folder>
+      <Replied>false</Replied>
+      <ItemEndTime>2012-06-22T08:10:22.000Z</ItemEndTime>
+      <ItemTitle>Reise ins Licht von Reinhard Fischer (2000)</ItemTitle>
+    </Message>
+    <Message>
+      <Sender>eBay</Sender>
+      <RecipientUserID>testuser_epicmuffin</RecipientUserID>
+      <Subject>Herzlichen Glückwunsch zur Eröffnung Ihres eBay Shops</Subject>
+      <MessageID>3204900</MessageID>
+      <Flagged>false</Flagged>
+      <Read>true</Read>
+      <ReceiveDate>2012-06-18T10:18:56.000Z</ReceiveDate>
+      <ExpirationDate>2012-07-18T10:18:56.000Z</ExpirationDate>
+      <ResponseDetails>
+        <ResponseEnabled>false</ResponseEnabled>
+      </ResponseDetails>
+      <Folder>
+        <FolderID>0</FolderID>
+      </Folder>
+      <Replied>false</Replied>
+    </Message>
+    <Message>
+      <Sender>eBay</Sender>
+      <RecipientUserID>testuser_epicmuffin</RecipientUserID>
+      <SendToName>testuser_epicmuffin</SendToName>
+      <Subject>Sie sind jetzt Mitglied bei eBay. Vielen Dank!</Subject>
+      <MessageID>3204890</MessageID>
+      <Flagged>false</Flagged>
+      <Read>false</Read>
+      <ReceiveDate>2012-06-18T09:55:40.000Z</ReceiveDate>
+      <ExpirationDate>2013-06-18T09:55:40.000Z</ExpirationDate>
+      <ResponseDetails>
+        <ResponseEnabled>false</ResponseEnabled>
+      </ResponseDetails>
+      <Folder>
+        <FolderID>0</FolderID>
+      </Folder>
+      <Replied>false</Replied>
+    </Message>
+  </Messages>
+</GetMyMessagesResponse>
+ </soapenv:Body> 
+</soapenv:Envelope>
